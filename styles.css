@@ -168,6 +168,16 @@ button { font: inherit; }
   line-height: 0.95;
 }
 
+.hero-subtitle {
+  max-width: 34rem;
+  margin: 1.35rem 0 0;
+  color: #137c64;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.55rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
 .hero h1 em {
   color: #137c64;
   font-family: "Newsreader", Georgia, serif;

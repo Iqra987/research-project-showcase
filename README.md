@@ -1,10 +1,14 @@
-# Barriers to Fresh Food Access
+# Transportation and Fresh Food Access
 
-A dependency-free static research showcase for community findings about health, grocery shopping, and city bus access in Syracuse, New York.
+## A Case Study of Santa Ana, CA, and Syracuse, NY
+
+A dependency-free static research showcase about travel patterns and preferences for grocery access, including access to co-ops, mobile markets, and delivery services.
 
 ## Project
 
-The site presents findings from a survey conducted from October through December 2025 by Syracuse University, Food Access Healthy Neighborhoods Now! (FAHNN), and the University of California, Irvine. It includes 476 valid responses: 421 in person and 55 online.
+Limited transportation options can make grocery shopping difficult for low-income households, seniors, and people with disabilities. This study surveys residents in Santa Ana, CA, and Syracuse, NY, to understand travel patterns and preferences for grocery access. Results will guide strategies to improve access to healthy food in underserved communities.
+
+The currently published community briefs present Syracuse findings from a survey conducted from October through December 2025 by Syracuse University, Food Access Healthy Neighborhoods Now! (FAHNN), and the University of California, Irvine. They include 476 valid responses: 421 in person and 55 online.
 
 ## Included
 
