@@ -246,6 +246,9 @@ button { font: inherit; }
 .overview-body { padding-top: 0.25rem; }
 .overview-body p { max-width: 42rem; color: var(--muted); }
 .overview-body .lead { margin-top: 0; color: var(--ink); font-size: clamp(1.2rem, 2vw, 1.55rem); line-height: 1.45; }
+.participation-note { max-width: 42rem; margin-top: 2rem; padding: 1.2rem 1.3rem; background: var(--ink); color: var(--white); border-left: 0.35rem solid var(--cyan); }
+.participation-note span { color: var(--cyan); font-family: "DM Mono", monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.participation-note p { margin: 0.55rem 0 0; color: var(--white); font-size: 1rem; }
 .study-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 3rem 0 0; }
 .study-facts div { padding-top: 0.9rem; border-top: 2px solid var(--ink); }
 .study-facts dt { font-family: "DM Mono", monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -317,10 +320,6 @@ button { font: inherit; }
 .finding-brief-grocery .metric-list strong, .finding-brief-grocery .compact-metrics strong { color: #547619; }
 .finding-brief-bus .metric-list strong, .finding-brief-bus .compact-metrics strong { color: #a85a00; }
 .metric-caption { margin: 0.8rem 0 0; color: var(--muted); font-size: 0.75rem; font-style: italic; }
-.brief-footer { display: flex; justify-content: flex-end; gap: 1rem; align-items: center; padding: 1rem clamp(1.4rem, 3vw, 2.2rem); background: var(--white); }
-.brief-download { flex: 0 0 auto; padding: 0.55rem 0.8rem; background: var(--ink); color: var(--white); font-size: 0.73rem; font-weight: 700; text-decoration: none; }
-.brief-download:hover, .brief-download:focus-visible { background: #137c64; }
-
 .report-list { display: grid; gap: 1px; background: var(--line); }
 .report-item { position: relative; padding: clamp(1.4rem, 3vw, 2.1rem); background: var(--white); }
 .report-item::after { position: absolute; top: 0; bottom: 0; left: 0; width: 0.3rem; background: var(--cyan); content: ""; transform: scaleY(0); transition: transform 180ms ease; }
