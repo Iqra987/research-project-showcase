@@ -13,7 +13,7 @@ The currently published community briefs present Syracuse findings from a survey
 ## Project team
 
 - Principal Investigators: Jean-Daniel Saphores (University of California, Irvine) and Anne C. Bellows (Syracuse University)
-- Community Partner: Rhonda Vesey (Food Access Healthy Neighborhoods Now!)
+- Community Partners: Rhonda Vesey (Food Access Healthy Neighborhoods Now!), CRECE Urban Farms, and Orange County Environmental Justice (OCEJ)
 - Student Researcher: Sabah Hossain Iqra (University of California, Irvine)
 
 Team biographies and photographs are sourced from the official UCI, Syracuse University, and FAHNN profiles linked from the website.

@@ -252,16 +252,20 @@ button { font: inherit; }
 .study-facts dd { margin: 0.45rem 0 0; font-weight: 700; }
 
 .team { scroll-margin-top: 4.75rem; }
-.team-grid { display: grid; grid-column: 3; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.team-grid { display: grid; grid-column: 3; gap: 2.75rem; }
+.team-group { min-width: 0; }
+.team-group-title { margin: 0 0 1rem; padding-bottom: 0.7rem; border-bottom: 2px solid var(--ink); font-size: clamp(1.3rem, 2.4vw, 2rem); letter-spacing: -0.035em; line-height: 1.1; }
+.team-stack { display: grid; gap: 1rem; }
 .team-card { display: grid; grid-template-columns: minmax(8.5rem, 0.8fr) minmax(0, 1.2fr); min-height: 15rem; overflow: hidden; background: var(--white); border-top: 0.35rem solid var(--cyan); }
-.team-card:nth-child(2) { border-top-color: var(--lime); }
-.team-card:nth-child(3) { border-top-color: #ef7b5d; }
-.team-card:nth-child(4) { border-top-color: #f2b35d; }
+.team-card-community { border-top-color: #ef7b5d; }
+.team-card-student { border-top-color: #f2b35d; }
 .team-card > img { width: 100%; height: 100%; min-height: 15rem; object-fit: cover; object-position: center; }
 .team-card > img.team-photo-rhonda { object-position: 53% center; }
+.team-logo-frame { display: grid; place-items: center; min-height: 15rem; padding: clamp(1.5rem, 4vw, 3rem); background: #f8f8f4; }
+.team-logo-frame img { width: 100%; max-width: 20rem; max-height: 11rem; object-fit: contain; }
 .team-card-body { display: flex; flex-direction: column; align-items: flex-start; padding: 1.35rem; }
 .team-role { margin: 0 0 0.75rem; color: #137c64; font-family: "DM Mono", monospace; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; }
-.team-card h3 { margin: 0; font-size: clamp(1.25rem, 2.1vw, 1.7rem); line-height: 1.1; }
+.team-card h4 { margin: 0; font-size: clamp(1.25rem, 2.1vw, 1.7rem); line-height: 1.1; }
 .team-card-body > p:not(.team-role) { margin: 0.8rem 0 1rem; color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
 .team-card a { margin-top: auto; font-size: 0.76rem; font-weight: 700; text-underline-offset: 0.25rem; }
 
@@ -380,7 +384,6 @@ button { font: inherit; }
   .section, .findings, .gallery { grid-template-columns: 3rem 1fr; }
   .section-heading { grid-column: 2; }
   .overview-body, .team-grid, .findings-content, .report-list, .gallery-grid { grid-column: 2; }
-  .team-grid { grid-template-columns: 1fr; }
   .findings-content { margin-top: 1rem; }
 }
 
@@ -406,6 +409,7 @@ button { font: inherit; }
   .section-heading, .overview-body, .team-grid, .findings-content, .report-list, .gallery-grid { grid-column: 1; }
   .team-card { grid-template-columns: 1fr; }
   .team-card > img { height: auto; aspect-ratio: 4 / 3; }
+  .team-logo-frame { min-height: 12rem; }
   .study-facts { grid-template-columns: 1fr; }
   .brief-header, .brief-details, .brief-highlights { grid-template-columns: 1fr; }
   .brief-footer { align-items: flex-start; flex-direction: column; }
