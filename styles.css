@@ -383,7 +383,7 @@ body {
   min-height: min(48rem, calc(100svh - 4.9rem));
   padding-block: clamp(4.5rem, 9vw, 7.5rem);
   background:
-    radial-gradient(circle at 82% 15%, rgba(217, 238, 103, 0.2) 0 12rem, transparent 12.1rem),
+    radial-gradient(circle at 94% 18%, rgba(217, 238, 103, 0.18) 0 9rem, transparent 9.1rem),
     radial-gradient(circle at 52% 110%, transparent 0 13rem, rgba(73, 201, 147, 0.13) 13.1rem 18rem, transparent 18.1rem),
     linear-gradient(135deg, #0d3a2d 0%, #15543d 52%, #21704c 100%);
 }
@@ -400,10 +400,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
-.hero-message { min-width: 0; max-width: 72rem; }
+.hero-message { min-width: 0; max-width: none; }
 .hero h1 {
-  max-width: 12ch;
-  font-size: clamp(3.4rem, 6.7vw, 6.75rem);
+  max-width: 18ch;
+  font-size: clamp(3.4rem, 6.2vw, 6.35rem);
   letter-spacing: -0.072em;
   text-wrap: balance;
 }
