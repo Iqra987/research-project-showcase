@@ -545,6 +545,7 @@ body {
   aspect-ratio: 16 / 10;
   object-position: center;
 }
+.team-card > img.team-photo-jean { object-position: center top; }
 .team-card:hover > img { filter: saturate(1.04); }
 .team-logo-frame { min-height: 10.5rem; padding: 1.6rem; }
 .team-logo-frame img { transition: transform 350ms ease; }
