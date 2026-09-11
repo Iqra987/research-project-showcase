@@ -536,10 +536,16 @@ body {
 .team-card > img {
   height: auto;
   min-height: 0;
-  aspect-ratio: 16 / 10;
-  transition: filter 350ms ease, transform 350ms ease;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 350ms ease;
 }
-.team-card:hover > img { filter: saturate(1.06); transform: scale(1.025); }
+.team-card > img.team-photo-rhonda {
+  aspect-ratio: 16 / 10;
+  object-position: center;
+}
+.team-card:hover > img { filter: saturate(1.04); }
 .team-logo-frame { min-height: 10.5rem; padding: 1.6rem; }
 .team-logo-frame img { transition: transform 350ms ease; }
 .team-card-logo:hover .team-logo-frame img { transform: scale(1.035); }
@@ -705,7 +711,8 @@ body {
   .team-grid, .reports .report-list { grid-template-columns: 1fr; }
   .team-group { padding: 0.8rem; border-radius: 1.5rem; }
   .team-card { grid-template-columns: 1fr; }
-  .team-card > img { height: auto; aspect-ratio: 4 / 3; }
+  .team-card > img { height: auto; aspect-ratio: 1 / 1; }
+  .team-card > img.team-photo-rhonda { aspect-ratio: 16 / 10; }
   .team-logo-frame { min-height: 12rem; }
   .study-facts { grid-template-columns: 1fr; }
   .brief-header, .brief-details, .brief-highlights { grid-template-columns: 1fr; }
