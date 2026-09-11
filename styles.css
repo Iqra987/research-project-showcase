@@ -513,13 +513,13 @@ body {
   margin: 0;
   padding: 0.35rem 0.25rem 1.1rem;
   border: 0;
-  font-size: clamp(1.1rem, 1.55vw, 1.45rem);
+  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
   white-space: nowrap;
 }
 .team-group:nth-child(1) .team-group-title { color: #146446; }
 .team-group:nth-child(2) .team-group-title { color: #963e2c; }
 .team-group:nth-child(3) .team-group-title { color: #745300; }
-.team-group-title::before { width: 0.65rem; height: 0.65rem; background: var(--cyan); border-radius: 50%; content: ""; flex: 0 0 auto; }
+.team-group-title::before { display: none; content: ""; }
 .team-group:nth-child(2) .team-group-title::before { background: var(--coral); }
 .team-group:nth-child(3) .team-group-title::before { background: var(--sun); }
 .team-card {
