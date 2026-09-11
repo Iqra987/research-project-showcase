@@ -112,6 +112,11 @@ button { font: inherit; }
   stroke-width: 1.8;
 }
 
+.brand-icon-fruit {
+  fill: #e84b3c;
+  stroke: #ff9a86;
+}
+
 .brand-icon-leaf {
   fill: var(--lime);
   stroke: var(--lime);
