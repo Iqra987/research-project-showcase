@@ -509,7 +509,8 @@ body {
   margin: 0;
   padding: 0.35rem 0.25rem 1.1rem;
   border: 0;
-  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  font-size: clamp(1.1rem, 1.55vw, 1.45rem);
+  white-space: nowrap;
 }
 .team-group:nth-child(1) .team-group-title { color: #146446; }
 .team-group:nth-child(2) .team-group-title { color: #963e2c; }
