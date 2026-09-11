@@ -10,6 +10,14 @@ Limited transportation options can make grocery shopping difficult for low-incom
 
 The currently published community briefs present Syracuse findings from a survey conducted from October through December 2025 by Syracuse University, Food Access Healthy Neighborhoods Now! (FAHNN), and the University of California, Irvine. They include 476 valid responses: 421 in person and 55 online.
 
+## Project team
+
+- Principal Investigators: Jean-Daniel Saphores (University of California, Irvine) and Anne C. Bellows (Syracuse University)
+- Community Partner: Rhonda Vesey (Food Access Healthy Neighborhoods Now!)
+- Student Researcher: Sabah Hossain Iqra (University of California, Irvine)
+
+Team biographies and photographs are sourced from the official UCI, Syracuse University, and FAHNN profiles linked from the website.
+
 ## Included
 
 - Responsive one-page research showcase
