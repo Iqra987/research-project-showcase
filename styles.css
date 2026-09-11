@@ -402,11 +402,11 @@ body {
 }
 .hero-message { min-width: 0; max-width: none; }
 .hero h1 {
-  max-width: 18ch;
-  font-size: clamp(3.4rem, 6.2vw, 6.35rem);
-  letter-spacing: -0.045em;
-  word-spacing: 0.11em;
-  text-wrap: balance;
+  max-width: none;
+  font-size: clamp(2.5rem, 3.8vw, 3.85rem);
+  letter-spacing: -0.035em;
+  word-spacing: 0.13em;
+  white-space: nowrap;
 }
 .hero-subtitle { max-width: 38rem; color: #eff6b9; font-size: clamp(1.55rem, 2.8vw, 2.35rem); }
 .hero-actions { margin-top: 2.5rem; }
@@ -680,7 +680,7 @@ body {
 
 @media (max-width: 950px) {
   .hero { min-height: auto; }
-  .hero h1 { max-width: 15ch; }
+  .hero h1 { max-width: 15ch; white-space: normal; text-wrap: balance; }
   .hero-copy { grid-template-columns: 1fr; }
   .section, .findings, .gallery { grid-template-columns: 3rem 1fr; }
   .section-heading { grid-column: 2; }
