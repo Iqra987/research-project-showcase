@@ -553,12 +553,12 @@ body {
   align-self: start;
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-position: center top;
 }
 .team-card.team-card-community > img.team-photo-rhonda {
   height: auto;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-position: center top;
 }
 .team-card-pi .team-card-body,
@@ -571,7 +571,7 @@ body {
   align-self: start;
   height: auto;
   min-height: 0;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   padding: 1rem;
 }
 .team-card > img {
