@@ -450,7 +450,10 @@ body {
 
 .team {
   max-width: none;
-  background: linear-gradient(180deg, #edf4ec, #f5f6ef);
+  background:
+    radial-gradient(circle at 8% 18%, rgba(73, 201, 147, 0.16), transparent 18rem),
+    radial-gradient(circle at 92% 78%, rgba(247, 199, 79, 0.16), transparent 22rem),
+    linear-gradient(180deg, #edf6ef, #f7f7f1);
   padding-right: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
   padding-left: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
 }
@@ -462,10 +465,42 @@ body {
   align-items: start;
 }
 .team-group {
+  position: relative;
+  overflow: hidden;
   padding: 1.15rem;
-  background: rgba(255, 254, 250, 0.64);
-  border: 1px solid rgba(18, 56, 45, 0.1);
+  border: 1px solid rgba(18, 56, 45, 0.12);
   border-radius: 2rem;
+  box-shadow: 0 1rem 2.5rem rgba(18, 56, 45, 0.07);
+}
+.team-group:nth-child(1) {
+  background: linear-gradient(155deg, #dff4e7, #f2fbf5 75%);
+  border-color: rgba(35, 148, 105, 0.22);
+}
+.team-group:nth-child(2) {
+  background: linear-gradient(155deg, #ffe8de, #fff8f4 75%);
+  border-color: rgba(239, 118, 87, 0.25);
+}
+.team-group:nth-child(3) {
+  background: linear-gradient(155deg, #fff0b8, #fff9e9 75%);
+  border-color: rgba(205, 153, 32, 0.28);
+}
+.team-group::after {
+  position: absolute;
+  right: -5rem;
+  bottom: -5rem;
+  width: 11rem;
+  height: 11rem;
+  background: rgba(35, 148, 105, 0.08);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+.team-group:nth-child(2)::after { background: rgba(239, 118, 87, 0.09); }
+.team-group:nth-child(3)::after { background: rgba(247, 199, 79, 0.14); }
+.team-group-title,
+.team-stack {
+  position: relative;
+  z-index: 1;
 }
 .team-group-title {
   display: flex;
@@ -476,12 +511,17 @@ body {
   border: 0;
   font-size: clamp(1.2rem, 2vw, 1.65rem);
 }
+.team-group:nth-child(1) .team-group-title { color: #146446; }
+.team-group:nth-child(2) .team-group-title { color: #963e2c; }
+.team-group:nth-child(3) .team-group-title { color: #745300; }
 .team-group-title::before { width: 0.65rem; height: 0.65rem; background: var(--cyan); border-radius: 50%; content: ""; flex: 0 0 auto; }
 .team-group:nth-child(2) .team-group-title::before { background: var(--coral); }
 .team-group:nth-child(3) .team-group-title::before { background: var(--sun); }
 .team-card {
   grid-template-columns: 1fr;
   min-height: 0;
+  overflow: hidden;
+  background: rgba(255, 254, 250, 0.94);
   border: 1px solid rgba(18, 56, 45, 0.1);
   border-top: 0;
   border-radius: 1.35rem;
@@ -492,10 +532,42 @@ body {
 .team-card::before { height: 0.32rem; background: var(--cyan); content: ""; }
 .team-card-community::before { background: var(--coral); }
 .team-card-student::before { background: var(--sun); }
-.team-card > img { height: auto; min-height: 0; aspect-ratio: 16 / 10; }
+.team-card > img {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  transition: filter 350ms ease, transform 350ms ease;
+}
+.team-card:hover > img { filter: saturate(1.06); transform: scale(1.025); }
 .team-logo-frame { min-height: 10.5rem; padding: 1.6rem; }
+.team-logo-frame img { transition: transform 350ms ease; }
+.team-card-logo:hover .team-logo-frame img { transform: scale(1.035); }
 .team-card-body { min-height: 13.5rem; padding: 1.35rem; }
 .team-card h4 { font-size: clamp(1.2rem, 1.8vw, 1.5rem); }
+.team-role {
+  display: inline-flex;
+  padding: 0.3rem 0.58rem;
+  background: #e1f5e9;
+  border-radius: 999px;
+  color: #146446;
+}
+.team-card-community .team-role { background: #ffebe3; color: #963e2c; }
+.team-card-student .team-role { background: #fff0b8; color: #745300; }
+.team-card a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.78rem;
+  background: #e4f4e9;
+  border-radius: 999px;
+  color: #145f43;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+.team-card-community a { background: #ffebe3; color: #8d3928; }
+.team-card-student a { background: #fff0b8; color: #6f4e00; }
+.team-card a:hover { background: #cfead9; transform: translateY(-1px); }
+.team-card-community a:hover { background: #ffd8cb; }
+.team-card-student a:hover { background: #ffe48a; }
 
 .findings {
   padding-block: clamp(5rem, 8vw, 7rem);
