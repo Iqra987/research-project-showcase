@@ -408,7 +408,12 @@ body {
   word-spacing: 0.13em;
   white-space: nowrap;
 }
-.hero-subtitle { max-width: 38rem; color: #eff6b9; font-size: clamp(1.55rem, 2.8vw, 2.35rem); }
+.hero-subtitle {
+  max-width: none;
+  color: #eff6b9;
+  font-size: clamp(1.5rem, 2.5vw, 2.35rem);
+  white-space: nowrap;
+}
 .hero-actions { margin-top: 2.5rem; }
 .button { min-height: 3.25rem; padding-inline: 1.3rem; }
 .button-primary { color: var(--ink); box-shadow: 0 0.7rem 1.8rem rgba(4, 29, 21, 0.18); }
@@ -752,6 +757,7 @@ body {
   .site-nav a:hover, .site-nav a:focus-visible { background: transparent; color: #166b4d; }
   .hero { padding-top: 3.2rem; }
   .hero h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); }
+  .hero-subtitle { white-space: normal; }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .section, .findings, .gallery { grid-template-columns: 1fr; gap: 1rem; }
   .section-index { display: none; }
