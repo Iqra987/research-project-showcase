@@ -622,6 +622,7 @@ body {
   padding-left: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
 }
 .reports .section-heading, .reports .report-list { grid-column: 2 / -1; }
+.reports .section-heading h2 { max-width: none; white-space: nowrap; }
 .report-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .report-item {
   display: flex;
@@ -710,6 +711,7 @@ body {
   .section-index { display: none; }
   .section-heading, .overview-body, .team-grid, .findings-content, .report-list, .gallery-grid { grid-column: 1; }
   .team .section-heading, .reports .section-heading, .gallery .section-heading, .reports .report-list, .gallery .gallery-grid { grid-column: 1; }
+  .reports .section-heading h2 { white-space: normal; }
   .team-grid, .reports .report-list { grid-template-columns: 1fr; }
   .team-group { padding: 0.8rem; border-radius: 1.5rem; }
   .team-card { grid-template-columns: 1fr; }
