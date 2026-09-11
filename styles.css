@@ -404,7 +404,8 @@ body {
 .hero h1 {
   max-width: 18ch;
   font-size: clamp(3.4rem, 6.2vw, 6.35rem);
-  letter-spacing: -0.072em;
+  letter-spacing: -0.045em;
+  word-spacing: 0.11em;
   text-wrap: balance;
 }
 .hero-subtitle { max-width: 38rem; color: #eff6b9; font-size: clamp(1.55rem, 2.8vw, 2.35rem); }
