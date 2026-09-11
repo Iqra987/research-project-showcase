@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A sample research project showcase for Coastal Signal Lab, documenting microplastic transport in an urban estuary."
+    />
+    <meta name="theme-color" content="#071a24" />
+    <title>Coastal Signal Lab — Research Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Coastal Signal Lab home">
+        <span class="brand-mark" aria-hidden="true">CS</span>
+        <span>Coastal Signal Lab</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#overview">Overview</a>
+        <a href="#findings">Findings</a>
+        <a href="#reports">Reports</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="project-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Sample research showcase · 2024–2026</p>
+          <h1 id="project-title">Tracing the hidden paths of <em>microplastics</em> through an urban estuary.</h1>
+          <p class="hero-summary">
+            A two-year field study combining surface sampling, tide models, and spectral imaging to understand where
+            plastic fragments accumulate—and when they return to the open coast.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#findings">Explore findings <span aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="reports/baseline.html">Read the latest report</a>
+          </div>
+        </div>
+
+        <aside class="project-card" aria-label="Project snapshot">
+          <div class="project-card-topline">
+            <span>Field study 04</span>
+            <span class="status-pill">Collection complete</span>
+          </div>
+          <svg class="tide-plot" viewBox="0 0 560 230" role="img" aria-labelledby="tide-title tide-desc">
+            <title id="tide-title">Modeled tidal transport across 24 hours</title>
+            <desc id="tide-desc">A cyan curve shows two high transport peaks and one smaller overnight peak.</desc>
+            <defs>
+              <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#5de1f2" stop-opacity="0.35" />
+                <stop offset="1" stop-color="#5de1f2" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <g class="plot-grid">
+              <path d="M30 30H530M30 85H530M30 140H530M30 195H530" />
+              <path d="M30 30V195M155 30V195M280 30V195M405 30V195M530 30V195" />
+            </g>
+            <path class="plot-area" d="M30 162 C76 142 82 64 134 58 S206 174 259 166 S330 75 383 70 S460 164 530 118 L530 195 L30 195 Z" />
+            <path class="plot-line" d="M30 162 C76 142 82 64 134 58 S206 174 259 166 S330 75 383 70 S460 164 530 118" />
+            <g class="plot-points">
+              <circle cx="134" cy="58" r="5" /><circle cx="383" cy="70" r="5" /><circle cx="530" cy="118" r="5" />
+            </g>
+            <g class="plot-labels">
+              <text x="30" y="220">00:00</text><text x="250" y="220">12:00</text><text x="493" y="220">24:00</text>
+            </g>
+          </svg>
+          <div class="metric-row">
+            <div><strong>18</strong><span>sampling sites</span></div>
+            <div><strong>1,284</strong><span>particles logged</span></div>
+            <div><strong>9</strong><span>tide cycles</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section overview" id="overview" aria-labelledby="overview-title">
+        <div class="section-index" aria-hidden="true">01</div>
+        <div class="section-heading">
+          <p class="eyebrow">The question</p>
+          <h2 id="overview-title">When the tide turns, where does the plastic go?</h2>
+        </div>
+        <div class="overview-body">
+          <p class="lead">
+            Most surveys tell us how much plastic is present. This project asks how it moves—linking particle type,
+            shoreline geometry, stormwater discharge, and tidal energy across one connected system.
+          </p>
+          <p>
+            Researchers sampled the same 18 stations at low, rising, and high tide. Every fragment was photographed,
+            measured, and classified with Fourier-transform infrared spectroscopy. A transport model then connected
+            those observations to hourly current direction.
+          </p>
+          <dl class="study-facts">
+            <div><dt>Study area</dt><dd>8.6 km² estuary</dd></div>
+            <div><dt>Sampling window</dt><dd>Apr 2024–Mar 2026</dd></div>
+            <div><dt>Lead method</dt><dd>FTIR + drift modeling</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section findings" id="findings" aria-labelledby="findings-title">
+        <div class="section-index light" aria-hidden="true">02</div>
+        <div class="section-heading light">
+          <p class="eyebrow">What we found</p>
+          <h2 id="findings-title">Three signals changed our working model.</h2>
+        </div>
+        <div class="finding-grid">
+          <article class="finding-card feature-finding">
+            <p class="finding-number">01 / RETENTION</p>
+            <div class="finding-value">62<span>%</span></div>
+            <h3>of observed fragments remained inside the marsh edge after a full tide cycle.</h3>
+            <p>Vegetated inlets behaved as temporary reservoirs, especially for fibers shorter than 2 mm.</p>
+          </article>
+          <article class="finding-card">
+            <p class="finding-number">02 / TIMING</p>
+            <div class="finding-value">2.4<span>×</span></div>
+            <h3>higher particle flux during the first post-rain ebb tide.</h3>
+            <p>The strongest movement occurred 4–7 hours after peak stormwater discharge.</p>
+          </article>
+          <article class="finding-card">
+            <p class="finding-number">03 / MATERIAL</p>
+            <div class="finding-value">47<span>%</span></div>
+            <h3>of classified particles were synthetic textile fibers.</h3>
+            <p>Polyester and nylon dominated at the upper-estuary stations closest to dense housing.</p>
+          </article>
+        </div>
+        <p class="sample-note">Illustrative sample findings for demonstration only.</p>
+      </section>
+
+      <section class="section reports" id="reports" aria-labelledby="reports-title">
+        <div class="section-index" aria-hidden="true">03</div>
+        <div class="section-heading">
+          <p class="eyebrow">Reports & data</p>
+          <h2 id="reports-title">Follow the evidence from field notes to model.</h2>
+        </div>
+        <div class="report-list">
+          <article class="report-item">
+            <div class="report-meta"><span>Research brief</span><time datetime="2026-03-18">18 Mar 2026</time></div>
+            <h3>Baseline Findings: Tidal Retention and Release</h3>
+            <p>A concise summary of the sampling design, particle inventory, and three primary findings.</p>
+            <a href="reports/baseline.html">Read report <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="report-item">
+            <div class="report-meta"><span>Methods note</span><time datetime="2025-11-04">04 Nov 2025</time></div>
+            <h3>From Sample Bottle to Spectral Match</h3>
+            <p>Step-by-step collection, contamination controls, imaging, and FTIR classification protocol.</p>
+            <a href="reports/methods.html">Read methods <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="report-item data-item">
+            <div class="report-meta"><span>Open dataset</span><span>CSV · 2 KB</span></div>
+            <h3>Sample Observation Dataset</h3>
+            <p>Twelve demonstration records showing the structure used for station, tide, polymer, and size observations.</p>
+            <a href="data/sample-observations.csv" download>Download CSV <span aria-hidden="true">↓</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-index" aria-hidden="true">04</div>
+        <div class="section-heading">
+          <p class="eyebrow">Image gallery</p>
+          <h2 id="gallery-title">Three views of the same moving system.</h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-card gallery-card-wide" type="button" data-gallery-open data-image="assets/figure-plume.svg" data-caption="Modeled particle density during the first ebb tide after rainfall.">
+            <img src="assets/figure-plume.svg" alt="Layered estuary transport map with colored particle density plumes" />
+            <span><strong>01</strong> Post-rain transport plume</span>
+          </button>
+          <button class="gallery-card" type="button" data-gallery-open data-image="assets/figure-spectrum.svg" data-caption="Example infrared spectrum used to classify a polyester fiber.">
+            <img src="assets/figure-spectrum.svg" alt="Infrared spectrum with highlighted identification peaks" />
+            <span><strong>02</strong> Spectral match</span>
+          </button>
+          <button class="gallery-card" type="button" data-gallery-open data-image="assets/figure-network.svg" data-caption="Sampling stations connected by modeled transport probability.">
+            <img src="assets/figure-network.svg" alt="Network diagram connecting sampling stations across the estuary" />
+            <span><strong>03</strong> Station network</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <p class="eyebrow">Project status</p>
+        <h2 id="closing-title">The field phase is complete.<br />The open analysis continues.</h2>
+        <p>This sample site is ready to adapt with your real project name, reports, images, and team details.</p>
+        <a class="button button-light" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Coastal Signal Lab <span>·</span> Sample research showcase</p>
+      <p>Built as a lightweight static site for GitHub Pages.</p>
+    </footer>
+
+    <dialog class="lightbox" data-lightbox aria-labelledby="lightbox-caption">
+      <button type="button" class="lightbox-close" aria-label="Close image viewer" data-lightbox-close>×</button>
+      <img src="" alt="" data-lightbox-image />
+      <p id="lightbox-caption" data-lightbox-caption></p>
+    </dialog>
+  </body>
+</html>

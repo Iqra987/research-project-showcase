@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">Station transport network</title>
+  <desc id="desc">A network map connecting twelve monitoring sites with modeled transport probability.</desc>
+  <rect width="900" height="675" fill="#102c38"/>
+  <g fill="none" stroke="#5de1f2" stroke-opacity=".25">
+    <path d="M95 488 203 396 318 468 405 333 523 405 633 287 758 332" stroke-width="9"/>
+    <path d="M95 488 155 224 310 180 405 333 468 143 633 287 748 132" stroke-width="3"/>
+    <path d="M203 396 310 180M318 468 523 405M523 405 748 132M155 224 405 333M468 143 758 332" stroke-width="2" stroke-dasharray="7 10"/>
+  </g>
+  <g fill="#5de1f2" stroke="#071a24" stroke-width="8"><circle cx="95" cy="488" r="15"/><circle cx="203" cy="396" r="15"/><circle cx="318" cy="468" r="15"/><circle cx="405" cy="333" r="15"/><circle cx="523" cy="405" r="15"/><circle cx="633" cy="287" r="15"/><circle cx="758" cy="332" r="15"/><circle cx="155" cy="224" r="15"/><circle cx="310" cy="180" r="15"/><circle cx="468" cy="143" r="15"/><circle cx="748" cy="132" r="15"/></g>
+  <g fill="#c8f560"><circle cx="405" cy="333" r="9"/><circle cx="633" cy="287" r="9"/><circle cx="310" cy="180" r="9"/></g>
+  <g fill="#fff" font-family="monospace"><text x="60" y="70" font-size="18">STATION NETWORK / P(TRANSFER)</text><text x="60" y="612" font-size="14" opacity=".65">LINE WEIGHT = MODELED CONNECTION STRENGTH</text></g>
+</svg>

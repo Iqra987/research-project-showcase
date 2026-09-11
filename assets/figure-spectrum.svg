@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">Spectral polymer match</title>
+  <desc id="desc">An infrared spectrum with several strong peaks and a ninety-four percent polyester match.</desc>
+  <rect width="900" height="675" fill="#071a24"/>
+  <g transform="translate(80 75)">
+    <g stroke="#fff" stroke-opacity=".12"><path d="M0 0V500M150 0V500M300 0V500M450 0V500M600 0V500M740 0V500"/><path d="M0 0H740M0 100H740M0 200H740M0 300H740M0 400H740M0 500H740"/></g>
+    <path d="M0 74C45 79 75 90 116 88s70-20 102-9c31 11 26 154 54 159 29 5 47-128 76-122 30 6 27 242 59 247 32 4 34-188 66-186 32 1 22 270 58 273 35 4 41-167 74-157 34 11 38 112 72 115 32 4 39-53 83-47" fill="none" stroke="#5de1f2" stroke-width="6" stroke-linejoin="round"/>
+    <g fill="#c8f560"><circle cx="272" cy="238" r="8"/><circle cx="407" cy="363" r="8"/><circle cx="531" cy="450" r="8"/></g>
+    <g fill="#c8f560" font-family="monospace" font-size="14"><text x="243" y="269">1715</text><text x="379" y="395">1240</text><text x="504" y="482">1092</text></g>
+    <g fill="#fff" font-family="monospace"><text x="0" y="-30" font-size="18">FTIR MATCH / SAMPLE E07-114</text><text x="0" y="545" font-size="15" opacity=".6">WAVENUMBER CM⁻¹</text><text x="545" y="65" font-size="48" fill="#c8f560">94%</text><text x="548" y="92" font-size="14" opacity=".7">POLYESTER MATCH</text></g>
+  </g>
+</svg>
