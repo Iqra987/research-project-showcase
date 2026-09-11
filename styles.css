@@ -559,8 +559,8 @@ body {
 .team-card.team-card-community > img.team-photo-rhonda {
   height: 100%;
   aspect-ratio: auto;
-  object-fit: cover;
-  object-position: 56% center;
+  object-fit: contain;
+  object-position: center;
 }
 .team-card-pi .team-card-body,
 .team-card-community .team-card-body,
