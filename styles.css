@@ -461,8 +461,8 @@ body {
 .team .section-heading { grid-column: 2 / -1; }
 .team-grid {
   grid-column: 2 / -1;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
   align-items: start;
 }
 .team-group {
@@ -485,6 +485,9 @@ body {
   background: linear-gradient(155deg, #fff0b8, #fff9e9 75%);
   border-color: rgba(205, 153, 32, 0.28);
 }
+.team-group:nth-child(1) .team-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.team-group:nth-child(2) .team-stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.team-group:nth-child(3) .team-stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .team-group::after {
   position: absolute;
   right: -5rem;
@@ -687,7 +690,9 @@ body {
   .section-heading { grid-column: 2; }
   .overview-body, .team-grid, .findings-content, .report-list, .gallery-grid { grid-column: 2; }
   .team .section-heading, .reports .section-heading, .gallery .section-heading { grid-column: 2; }
-  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-grid { grid-template-columns: minmax(0, 1fr); }
+  .team-group:nth-child(2) .team-stack,
+  .team-group:nth-child(3) .team-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .reports .report-list { grid-column: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery .gallery-grid { grid-column: 2; }
   .findings-content { margin-top: 1rem; }
@@ -713,6 +718,9 @@ body {
   .team .section-heading, .reports .section-heading, .gallery .section-heading, .reports .report-list, .gallery .gallery-grid { grid-column: 1; }
   .reports .section-heading h2 { white-space: normal; }
   .team-grid, .reports .report-list { grid-template-columns: 1fr; }
+  .team-group:nth-child(1) .team-stack,
+  .team-group:nth-child(2) .team-stack,
+  .team-group:nth-child(3) .team-stack { grid-template-columns: 1fr; }
   .team-group { padding: 0.8rem; border-radius: 1.5rem; }
   .team-card { grid-template-columns: 1fr; }
   .team-card > img { height: auto; aspect-ratio: 1 / 1; }
