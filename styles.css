@@ -505,6 +505,7 @@ body {
 .team-stack {
   position: relative;
   z-index: 1;
+  align-items: start;
 }
 .team-group-title {
   display: flex;
@@ -542,16 +543,22 @@ body {
 .team-card-student {
   grid-template-columns: clamp(8rem, 11vw, 10.5rem) minmax(0, 1fr);
 }
-.team-card.team-card-pi > img,
-.team-card.team-card-community > img,
-.team-card.team-card-student > img {
+.team-card.team-card-pi > img {
   width: 100%;
   height: 100%;
   aspect-ratio: auto;
 }
+.team-card.team-card-community > img,
+.team-card.team-card-student > img {
+  align-self: start;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-position: center top;
+}
 .team-card.team-card-community > img.team-photo-rhonda {
-  height: 100%;
-  aspect-ratio: auto;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-position: center top;
 }
 .team-card-pi .team-card-body,
@@ -561,8 +568,10 @@ body {
   padding: 1.15rem;
 }
 .team-card-logo .team-logo-frame {
-  height: 100%;
+  align-self: start;
+  height: auto;
   min-height: 0;
+  aspect-ratio: 1 / 1;
   padding: 1rem;
 }
 .team-card > img {
@@ -760,7 +769,7 @@ body {
     aspect-ratio: 4 / 3;
     object-position: center top;
   }
-  .team-card-logo .team-logo-frame { height: auto; min-height: 10.5rem; }
+  .team-card-logo .team-logo-frame { height: auto; min-height: 0; aspect-ratio: 4 / 3; }
   .study-facts { grid-template-columns: 1fr; }
   .brief-header, .brief-details, .brief-highlights { grid-template-columns: 1fr; }
   .brief-highlights div { min-height: auto; }
