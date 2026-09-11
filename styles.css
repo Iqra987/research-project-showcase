@@ -289,7 +289,10 @@ button { font: inherit; }
 .metric-list strong, .compact-metrics strong { color: #137c64; font-family: "DM Mono", monospace; font-size: 0.84rem; }
 .finding-brief-grocery .metric-list strong, .finding-brief-grocery .compact-metrics strong { color: #547619; }
 .finding-brief-bus .metric-list strong, .finding-brief-bus .compact-metrics strong { color: #a85a00; }
-.metric-caption { margin: 0.8rem 0 0; color: var(--muted); font-size: 0.75rem; font-style: italic; }
+.metric-context { margin: 0 0 0.85rem; padding: 0.72rem 0.85rem; background: #f3f8f5; border-left: 3px solid #137c64; border-radius: 0 0.55rem 0.55rem 0; color: var(--ink-soft); font-size: 0.78rem; line-height: 1.5; }
+.metric-context strong { display: block; margin-bottom: 0.12rem; color: var(--ink); font-family: "DM Mono", monospace; font-size: 0.66rem; font-weight: 500; letter-spacing: 0.055em; text-transform: uppercase; }
+.finding-brief-grocery .metric-context { background: #f6f8ee; border-left-color: #769334; }
+.finding-brief-bus .metric-context { background: #fff6e9; border-left-color: #d17b18; }
 .report-list { display: grid; gap: 1rem; background: transparent; }
 .report-item { position: relative; overflow: hidden; padding: clamp(1.4rem, 3vw, 2.1rem); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); transition: transform 180ms ease, box-shadow 180ms ease; }
 .report-item:hover { transform: translateY(-3px); box-shadow: 0 1.4rem 3.2rem rgba(23, 59, 47, 0.14); }
