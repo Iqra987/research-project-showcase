@@ -486,8 +486,8 @@ body {
   border-color: rgba(205, 153, 32, 0.28);
 }
 .team-group:nth-child(1) .team-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.team-group:nth-child(2) .team-stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.team-group:nth-child(3) .team-stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.team-group:nth-child(2) .team-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.team-group:nth-child(3) .team-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .team-group::after {
   position: absolute;
   right: -5rem;
@@ -505,7 +505,7 @@ body {
 .team-stack {
   position: relative;
   z-index: 1;
-  align-items: start;
+  align-items: stretch;
 }
 .team-group-title {
   display: flex;
@@ -550,16 +550,17 @@ body {
 }
 .team-card.team-card-community > img,
 .team-card.team-card-student > img {
-  align-self: start;
+  align-self: stretch;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+  aspect-ratio: auto;
   object-position: center top;
 }
 .team-card.team-card-community > img.team-photo-rhonda {
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-position: center top;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: 56% center;
 }
 .team-card-pi .team-card-body,
 .team-card-community .team-card-body,
@@ -568,10 +569,10 @@ body {
   padding: 1.15rem;
 }
 .team-card-logo .team-logo-frame {
-  align-self: start;
-  height: auto;
-  min-height: 0;
-  aspect-ratio: 4 / 3;
+  align-self: stretch;
+  height: 100%;
+  min-height: 11.25rem;
+  aspect-ratio: auto;
   padding: 1rem;
 }
 .team-card > img {
