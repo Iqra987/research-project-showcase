@@ -537,17 +537,33 @@ body {
 .team-card::before { grid-column: 1 / -1; height: 0.32rem; background: var(--cyan); content: ""; }
 .team-card-community::before { background: var(--coral); }
 .team-card-student::before { background: var(--sun); }
-.team-card-pi {
+.team-card-pi,
+.team-card-community,
+.team-card-student {
   grid-template-columns: clamp(8rem, 11vw, 10.5rem) minmax(0, 1fr);
 }
-.team-card.team-card-pi > img {
+.team-card.team-card-pi > img,
+.team-card.team-card-community > img,
+.team-card.team-card-student > img {
   width: 100%;
   height: 100%;
   aspect-ratio: auto;
 }
-.team-card-pi .team-card-body {
+.team-card.team-card-community > img.team-photo-rhonda {
+  height: 100%;
+  aspect-ratio: auto;
+  object-position: center top;
+}
+.team-card-pi .team-card-body,
+.team-card-community .team-card-body,
+.team-card-student .team-card-body {
   min-height: 11.25rem;
   padding: 1.15rem;
+}
+.team-card-logo .team-logo-frame {
+  height: 100%;
+  min-height: 0;
+  padding: 1rem;
 }
 .team-card > img {
   height: auto;
@@ -736,9 +752,15 @@ body {
   .team-group { padding: 0.8rem; border-radius: 1.5rem; }
   .team-card { grid-template-columns: 1fr; }
   .team-card > img { height: auto; aspect-ratio: 1 / 1; }
-  .team-card.team-card-pi > img { height: auto; aspect-ratio: 4 / 3; object-position: center top; }
-  .team-card > img.team-photo-rhonda { aspect-ratio: 16 / 10; }
-  .team-logo-frame { min-height: 12rem; }
+  .team-card.team-card-pi > img,
+  .team-card.team-card-community > img,
+  .team-card.team-card-student > img,
+  .team-card.team-card-community > img.team-photo-rhonda {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-position: center top;
+  }
+  .team-card-logo .team-logo-frame { height: auto; min-height: 10.5rem; }
   .study-facts { grid-template-columns: 1fr; }
   .brief-header, .brief-details, .brief-highlights { grid-template-columns: 1fr; }
   .brief-highlights div { min-height: auto; }
