@@ -403,7 +403,7 @@ body {
 .hero-message { min-width: 0; max-width: none; }
 .hero h1 {
   max-width: none;
-  font-size: clamp(2.5rem, 3.8vw, 3.85rem);
+  font-size: clamp(2.55rem, 4vw, 4.05rem);
   letter-spacing: -0.035em;
   word-spacing: 0.13em;
   white-space: nowrap;
