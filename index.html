@@ -3,205 +3,72 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A sample research project showcase for Coastal Signal Lab, documenting microplastic transport in an urban estuary."
-    />
-    <meta name="theme-color" content="#071a24" />
-    <title>Coastal Signal Lab — Research Showcase</title>
+    <meta name="description" content="Community findings on health, grocery shopping, and city bus access from the Barriers to Fresh Food Access project in Syracuse, New York." />
+    <meta name="theme-color" content="#10261f" />
+    <title>Barriers to Fresh Food Access — Syracuse Community Findings</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Coastal Signal Lab home">
-        <span class="brand-mark" aria-hidden="true">CS</span>
-        <span>Coastal Signal Lab</span>
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
-        <span class="sr-only">Toggle navigation</span>
-        <span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#overview">Overview</a>
-        <a href="#findings">Findings</a>
-        <a href="#reports">Reports</a>
-        <a href="#gallery">Gallery</a>
-      </nav>
+      <a class="brand" href="#top" aria-label="Fresh Food Access home"><span class="brand-mark" aria-hidden="true">FA</span><span>Fresh Food Access · Syracuse</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav><a href="#overview">Overview</a><a href="#findings">Findings</a><a href="#reports">Briefs</a><a href="#gallery">Gallery</a></nav>
     </header>
-
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="project-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Sample research showcase · 2024–2026</p>
-          <h1 id="project-title">Tracing the hidden paths of <em>microplastics</em> through an urban estuary.</h1>
-          <p class="hero-summary">
-            A two-year field study combining surface sampling, tide models, and spectral imaging to understand where
-            plastic fragments accumulate—and when they return to the open coast.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#findings">Explore findings <span aria-hidden="true">↘</span></a>
-            <a class="button button-ghost" href="reports/baseline.html">Read the latest report</a>
-          </div>
+          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Community research · Syracuse, New York · 2025–2026</p>
+          <h1 id="project-title">Fresh food access starts with <em>listening.</em></h1>
+          <p class="hero-summary">A community survey of 476 Syracuse-area residents documents how affordability, health, transportation, and the local food landscape shape everyday grocery choices.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#findings">Explore findings <span aria-hidden="true">↘</span></a><a class="button button-ghost" href="reports/community-brief-grocery-shopping-overview.pdf" download>Download overview PDF</a></div>
         </div>
-
         <aside class="project-card" aria-label="Project snapshot">
-          <div class="project-card-topline">
-            <span>Field study 04</span>
-            <span class="status-pill">Collection complete</span>
-          </div>
-          <svg class="tide-plot" viewBox="0 0 560 230" role="img" aria-labelledby="tide-title tide-desc">
-            <title id="tide-title">Modeled tidal transport across 24 hours</title>
-            <desc id="tide-desc">A cyan curve shows two high transport peaks and one smaller overnight peak.</desc>
-            <defs>
-              <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#5de1f2" stop-opacity="0.35" />
-                <stop offset="1" stop-color="#5de1f2" stop-opacity="0" />
-              </linearGradient>
-            </defs>
-            <g class="plot-grid">
-              <path d="M30 30H530M30 85H530M30 140H530M30 195H530" />
-              <path d="M30 30V195M155 30V195M280 30V195M405 30V195M530 30V195" />
-            </g>
-            <path class="plot-area" d="M30 162 C76 142 82 64 134 58 S206 174 259 166 S330 75 383 70 S460 164 530 118 L530 195 L30 195 Z" />
-            <path class="plot-line" d="M30 162 C76 142 82 64 134 58 S206 174 259 166 S330 75 383 70 S460 164 530 118" />
-            <g class="plot-points">
-              <circle cx="134" cy="58" r="5" /><circle cx="383" cy="70" r="5" /><circle cx="530" cy="118" r="5" />
-            </g>
-            <g class="plot-labels">
-              <text x="30" y="220">00:00</text><text x="250" y="220">12:00</text><text x="493" y="220">24:00</text>
-            </g>
-          </svg>
-          <div class="metric-row">
-            <div><strong>18</strong><span>sampling sites</span></div>
-            <div><strong>1,284</strong><span>particles logged</span></div>
-            <div><strong>9</strong><span>tide cycles</span></div>
-          </div>
+          <div class="project-card-topline"><span>Community survey</span><span class="status-pill">Findings published</span></div>
+          <div class="barrier-chart" role="img" aria-label="Top grocery barriers: affordability 62.4 percent, limited fresh and healthy options 31.3 percent, and transportation cost 22.9 percent"><p>Top reported grocery barriers</p><div class="bar-row"><span>Affordability</span><i style="--value:62.4%"></i><strong>62.4%</strong></div><div class="bar-row"><span>Limited fresh options</span><i style="--value:31.3%"></i><strong>31.3%</strong></div><div class="bar-row"><span>Transportation cost</span><i style="--value:22.9%"></i><strong>22.9%</strong></div></div>
+          <div class="metric-row"><div><strong>476</strong><span>valid responses</span></div><div><strong>421</strong><span>in person</span></div><div><strong>55</strong><span>online</span></div></div>
         </aside>
       </section>
-
       <section class="section overview" id="overview" aria-labelledby="overview-title">
-        <div class="section-index" aria-hidden="true">01</div>
-        <div class="section-heading">
-          <p class="eyebrow">The question</p>
-          <h2 id="overview-title">When the tide turns, where does the plastic go?</h2>
-        </div>
-        <div class="overview-body">
-          <p class="lead">
-            Most surveys tell us how much plastic is present. This project asks how it moves—linking particle type,
-            shoreline geometry, stormwater discharge, and tidal energy across one connected system.
-          </p>
-          <p>
-            Researchers sampled the same 18 stations at low, rising, and high tide. Every fragment was photographed,
-            measured, and classified with Fourier-transform infrared spectroscopy. A transport model then connected
-            those observations to hourly current direction.
-          </p>
-          <dl class="study-facts">
-            <div><dt>Study area</dt><dd>8.6 km² estuary</dd></div>
-            <div><dt>Sampling window</dt><dd>Apr 2024–Mar 2026</dd></div>
-            <div><dt>Lead method</dt><dd>FTIR + drift modeling</dd></div>
-          </dl>
-        </div>
+        <div class="section-index" aria-hidden="true">01</div><div class="section-heading"><p class="eyebrow">The project</p><h2 id="overview-title">What would make fresh food easier to afford and reach?</h2></div>
+        <div class="overview-body"><p class="lead">Syracuse University, Food Access Healthy Neighborhoods Now! (FAHNN), and the University of California, Irvine partnered to learn directly from residents about grocery shopping, food security, health, and transportation.</p><p>The survey was conducted from October through December 2025. Participants completed 421 surveys in person and 55 online, and each participant received a $25 gift card. These community briefs organize the results around health and wellness, grocery shopping overall, and grocery trips by city bus.</p><dl class="study-facts"><div><dt>Study area</dt><dd>Syracuse, New York</dd></div><div><dt>Survey window</dt><dd>Oct–Dec 2025</dd></div><div><dt>Valid responses</dt><dd>476 residents</dd></div></dl></div>
       </section>
-
       <section class="section findings" id="findings" aria-labelledby="findings-title">
-        <div class="section-index light" aria-hidden="true">02</div>
-        <div class="section-heading light">
-          <p class="eyebrow">What we found</p>
-          <h2 id="findings-title">Three signals changed our working model.</h2>
-        </div>
-        <div class="finding-grid">
-          <article class="finding-card feature-finding">
-            <p class="finding-number">01 / RETENTION</p>
-            <div class="finding-value">62<span>%</span></div>
-            <h3>of observed fragments remained inside the marsh edge after a full tide cycle.</h3>
-            <p>Vegetated inlets behaved as temporary reservoirs, especially for fibers shorter than 2 mm.</p>
+        <div class="section-index light" aria-hidden="true">02</div><div class="section-heading light"><p class="eyebrow">Community findings</p><h2 id="findings-title">What residents told us about fresh food access.</h2></div>
+        <div class="findings-content">
+          <div class="findings-intro"><p>Together, the three briefs show that food access is not a single issue: household budgets, health, neighborhood retail, and transportation all influence whether fresh food is within reach.</p><p class="findings-sample">Survey conducted October–December 2025 · 476 valid responses · 421 in person · 55 online</p><nav class="findings-jump" aria-label="Findings subsections"><a href="#health-wellness">Health & wellness</a><a href="#grocery-overview">Grocery overview</a><a href="#grocery-bus">Grocery shopping by bus</a></nav></div>
+          <article class="finding-brief finding-brief-health" id="health-wellness" aria-labelledby="health-wellness-title">
+            <header class="brief-header"><div><p class="brief-number">Community brief II · 01</p><h3 id="health-wellness-title">Nutritional Health and Wellness</h3></div><p>This brief summarizes residents’ answers about food security, self-described health, stress, diet-related conditions, and beliefs about the role of fresh food in supporting health.</p></header>
+            <div class="brief-highlights" aria-label="Health and wellness highlights"><div><strong>58%</strong><span>experience low or very low food security</span></div><div><strong>40%</strong><span>describe their health as fair or poor</span></div><div><strong>78%</strong><span>say fresh, nutritious foods reduce stress</span></div></div>
+            <div class="brief-details"><section aria-labelledby="food-security-detail"><p class="detail-label" id="food-security-detail">Food security in the last 12 months</p><ul class="metric-list"><li><span>Food bought did not last and there was no money for more</span><strong>59%</strong></li><li><span>Could not afford to eat balanced meals</span><strong>56%</strong></li><li><span>Ate less than they felt they should</span><strong>38%</strong></li><li><span>Were hungry but did not eat because food money ran out</span><strong>29%</strong></li></ul></section><section aria-labelledby="health-detail"><p class="detail-label" id="health-detail">Health and the perceived benefit of fresh food</p><p class="detail-copy"><strong>35%</strong> reported inadequate access to mental health care. The most common diet-related issues were hypertension (23.1%) and type 2 diabetes (14.9%).</p><ul class="compact-metrics"><li><span>Stress</span><strong>77.7%</strong></li><li><span>Type 2 diabetes</span><strong>66.6%</strong></li><li><span>Heart disease</span><strong>64.7%</strong></li><li><span>Hypertension</span><strong>61.3%</strong></li><li><span>Stroke risk</span><strong>57.1%</strong></li></ul><p class="metric-caption">Share who believe fresh food can help address each condition.</p></section></div>
+            <footer class="brief-footer"><p class="brief-attribution">Anne C. Bellows, Rhonda S. Vesey, Jean-Daniel M. Saphores, and Sabah Hossain Iqra (2026)</p><a class="brief-download" href="reports/community-brief-health-wellness.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></footer>
           </article>
-          <article class="finding-card">
-            <p class="finding-number">02 / TIMING</p>
-            <div class="finding-value">2.4<span>×</span></div>
-            <h3>higher particle flux during the first post-rain ebb tide.</h3>
-            <p>The strongest movement occurred 4–7 hours after peak stormwater discharge.</p>
+          <article class="finding-brief finding-brief-grocery" id="grocery-overview" aria-labelledby="grocery-overview-title">
+            <header class="brief-header"><div><p class="brief-number">Community brief I · 02</p><h3 id="grocery-overview-title">Grocery Shopping Overview</h3></div><p>This brief describes where households shop, what makes grocery shopping difficult, and the food retail and transportation options residents say would improve access to fresh food.</p></header>
+            <div class="brief-highlights" aria-label="Grocery shopping highlights"><div><strong>92.2%</strong><span>use full-service grocery stores</span></div><div><strong>62.4%</strong><span>identify expensive groceries or produce as a barrier</span></div><div><strong>59.5%</strong><span>would like a neighborhood farmers market</span></div></div>
+            <div class="brief-details"><section aria-labelledby="shopping-patterns-detail"><p class="detail-label" id="shopping-patterns-detail">How respondents grocery shop</p><ul class="metric-list"><li><span>Full-service grocery store</span><strong>92.2%</strong></li><li><span>Farmers market</span><strong>40.3%</strong></li><li><span>Dollar store</span><strong>38.4%</strong></li><li><span>Food pantry</span><strong>33.0%</strong></li><li><span>Online with home delivery</span><strong>18.7%</strong></li></ul></section><section aria-labelledby="grocery-barriers-detail"><p class="detail-label" id="grocery-barriers-detail">Barriers and resident priorities</p><p class="detail-copy">After affordability, respondents most often identified limited fresh or healthy options (31.3%), high transportation costs (22.9%), and lack of time (20.8%).</p><ul class="compact-metrics"><li><span>Full-service grocery store</span><strong>65.4%</strong></li><li><span>Neighborhood farmers market</span><strong>59.5%</strong></li><li><span>Neighborhood/backyard garden</span><strong>37.0%</strong></li><li><span>Food co-op</span><strong>34.2%</strong></li><li><span>Improved public transportation</span><strong>30.0%</strong></li></ul><p class="metric-caption">Options respondents said would help them access fresh food.</p></section></div>
+            <footer class="brief-footer"><p class="brief-attribution">Rhonda S. Vesey, Jean-Daniel M. Saphores, Anne C. Bellows, and Sabah Hossain Iqra (2026)</p><a class="brief-download" href="reports/community-brief-grocery-shopping-overview.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></footer>
           </article>
-          <article class="finding-card">
-            <p class="finding-number">03 / MATERIAL</p>
-            <div class="finding-value">47<span>%</span></div>
-            <h3>of classified particles were synthetic textile fibers.</h3>
-            <p>Polyester and nylon dominated at the upper-estuary stations closest to dense housing.</p>
+          <article class="finding-brief finding-brief-bus" id="grocery-bus" aria-labelledby="grocery-bus-title">
+            <header class="brief-header"><div><p class="brief-number">Community brief III · 03</p><h3 id="grocery-bus-title">Grocery Shopping by City Bus</h3></div><p>This brief focuses on how residents use city buses for grocery trips, the barriers riders face, and practical changes that could make fresh food easier and safer to reach.</p></header>
+            <div class="brief-highlights" aria-label="Grocery shopping by bus highlights"><div><strong>21.8%</strong><span>do not have weekly access to a car</span></div><div><strong>15.2%</strong><span>sometimes or always take the bus to grocery shop</span></div><div><strong>30.0%</strong><span>want public transportation improved for grocery shopping</span></div></div>
+            <div class="brief-details"><section aria-labelledby="bus-barriers-detail"><p class="detail-label" id="bus-barriers-detail">Barriers among those seeking improvements</p><ul class="metric-list"><li><span>Difficulty carrying groceries onto buses</span><strong>52.4%</strong></li><li><span>Bus stops too far from stores</span><strong>25.9%</strong></li><li><span>Bus stops too far from home</span><strong>25.9%</strong></li><li><span>Inadequate bus stop shelters</span><strong>25.2%</strong></li><li><span>Insufficient or poor sidewalks</span><strong>22.4%</strong></li><li><span>Unsafe bus stops</span><strong>21.7%</strong></li></ul><p class="metric-caption">Among the 30% who want public transportation improved.</p></section><section aria-labelledby="bus-solutions-detail"><p class="detail-label" id="bus-solutions-detail">Changes residents said would help</p><p class="detail-copy">Among respondents who felt unsafe using public transportation, 61% wanted better lighting, 56% designated grocery storage, 55% improved security, and 53% a way to secure a shopping cart next to them.</p><ul class="compact-metrics"><li><span>Free bus fares for grocery trips</span><strong>73%</strong></li><li><span>Grocery discounts or a folding cart</span><strong>53%</strong></li><li><span>Help carrying groceries on and off</span><strong>44%</strong></li><li><span>Improved disability access</span><strong>38%</strong></li><li><span>Bus trip-planning app</span><strong>35%</strong></li></ul><p class="metric-caption">Among the 30% who want public transportation improved.</p></section></div>
+            <footer class="brief-footer"><p class="brief-attribution">Jean-Daniel M. Saphores, Sabah Hossain Iqra, Anne C. Bellows, and Rhonda S. Vesey (2026)</p><a class="brief-download" href="reports/community-brief-grocery-shopping-by-city-bus.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></footer>
           </article>
         </div>
-        <p class="sample-note">Illustrative sample findings for demonstration only.</p>
       </section>
-
       <section class="section reports" id="reports" aria-labelledby="reports-title">
-        <div class="section-index" aria-hidden="true">03</div>
-        <div class="section-heading">
-          <p class="eyebrow">Reports & data</p>
-          <h2 id="reports-title">Follow the evidence from field notes to model.</h2>
-        </div>
-        <div class="report-list">
-          <article class="report-item">
-            <div class="report-meta"><span>Research brief</span><time datetime="2026-03-18">18 Mar 2026</time></div>
-            <h3>Baseline Findings: Tidal Retention and Release</h3>
-            <p>A concise summary of the sampling design, particle inventory, and three primary findings.</p>
-            <a href="reports/baseline.html">Read report <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="report-item">
-            <div class="report-meta"><span>Methods note</span><time datetime="2025-11-04">04 Nov 2025</time></div>
-            <h3>From Sample Bottle to Spectral Match</h3>
-            <p>Step-by-step collection, contamination controls, imaging, and FTIR classification protocol.</p>
-            <a href="reports/methods.html">Read methods <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="report-item data-item">
-            <div class="report-meta"><span>Open dataset</span><span>CSV · 2 KB</span></div>
-            <h3>Sample Observation Dataset</h3>
-            <p>Twelve demonstration records showing the structure used for station, tide, polymer, and size observations.</p>
-            <a href="data/sample-observations.csv" download>Download CSV <span aria-hidden="true">↓</span></a>
-          </article>
-        </div>
+        <div class="section-index" aria-hidden="true">03</div><div class="section-heading"><p class="eyebrow">Community briefs & data</p><h2 id="reports-title">Read the full findings.</h2></div>
+        <div class="report-list"><article class="report-item"><div class="report-meta"><span>Community brief II</span><span>PDF</span></div><h3>Nutritional Health and Wellness</h3><p>Food security, health, stress, diet-related conditions, and residents’ views on the benefits of fresh food.</p><a href="reports/community-brief-health-wellness.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></article><article class="report-item"><div class="report-meta"><span>Community brief I</span><span>PDF</span></div><h3>Grocery Shopping Overview</h3><p>Where residents shop, the barriers they encounter, and what they say would improve fresh food access.</p><a href="reports/community-brief-grocery-shopping-overview.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></article><article class="report-item"><div class="report-meta"><span>Community brief III</span><span>PDF</span></div><h3>Grocery Shopping by City Bus</h3><p>Bus use for grocery trips, transportation barriers, safety concerns, and resident-prioritized improvements.</p><a href="reports/community-brief-grocery-shopping-by-city-bus.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></article><article class="report-item data-item"><div class="report-meta"><span>Findings snapshot</span><span>CSV</span></div><h3>Community Findings Data</h3><p>A compact, machine-readable table of the headline measures shown across the three community briefs.</p><a href="data/community-findings-snapshot.csv" download>Download CSV <span aria-hidden="true">↓</span></a></article></div>
       </section>
-
       <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
-        <div class="section-index" aria-hidden="true">04</div>
-        <div class="section-heading">
-          <p class="eyebrow">Image gallery</p>
-          <h2 id="gallery-title">Three views of the same moving system.</h2>
-        </div>
-        <div class="gallery-grid">
-          <button class="gallery-card gallery-card-wide" type="button" data-gallery-open data-image="assets/figure-plume.svg" data-caption="Modeled particle density during the first ebb tide after rainfall.">
-            <img src="assets/figure-plume.svg" alt="Layered estuary transport map with colored particle density plumes" />
-            <span><strong>01</strong> Post-rain transport plume</span>
-          </button>
-          <button class="gallery-card" type="button" data-gallery-open data-image="assets/figure-spectrum.svg" data-caption="Example infrared spectrum used to classify a polyester fiber.">
-            <img src="assets/figure-spectrum.svg" alt="Infrared spectrum with highlighted identification peaks" />
-            <span><strong>02</strong> Spectral match</span>
-          </button>
-          <button class="gallery-card" type="button" data-gallery-open data-image="assets/figure-network.svg" data-caption="Sampling stations connected by modeled transport probability.">
-            <img src="assets/figure-network.svg" alt="Network diagram connecting sampling stations across the estuary" />
-            <span><strong>03</strong> Station network</span>
-          </button>
-        </div>
+        <div class="section-index" aria-hidden="true">04</div><div class="section-heading"><p class="eyebrow">Data gallery</p><h2 id="gallery-title">The data, at a glance.</h2></div>
+        <div class="gallery-grid"><button class="gallery-card gallery-card-wide" type="button" data-gallery-open data-image="assets/figure-plume.svg" data-caption="The most commonly reported grocery-shopping barriers among survey respondents."><img src="assets/figure-plume.svg" alt="Bar chart of grocery-shopping barriers led by grocery affordability" /><span><strong>01</strong> Grocery-shopping barriers</span></button><button class="gallery-card" type="button" data-gallery-open data-image="assets/figure-spectrum.svg" data-caption="Headline findings about food security, self-described health, and stress."><img src="assets/figure-spectrum.svg" alt="Health and wellness snapshot with three headline percentages" /><span><strong>02</strong> Health & wellness</span></button><button class="gallery-card" type="button" data-gallery-open data-image="assets/figure-network.svg" data-caption="Changes residents said would make grocery trips by bus easier."><img src="assets/figure-network.svg" alt="Bar chart of resident-prioritized city bus improvements" /><span><strong>03</strong> Better grocery trips by bus</span></button></div>
       </section>
-
-      <section class="closing" aria-labelledby="closing-title">
-        <p class="eyebrow">Project status</p>
-        <h2 id="closing-title">The field phase is complete.<br />The open analysis continues.</h2>
-        <p>This sample site is ready to adapt with your real project name, reports, images, and team details.</p>
-        <a class="button button-light" href="#top">Back to top <span aria-hidden="true">↑</span></a>
-      </section>
+      <section class="closing" aria-labelledby="closing-title"><p class="eyebrow">Community evidence</p><h2 id="closing-title">The priorities are clear.<br />The full briefs are open.</h2><p>Explore the findings above or download the three community briefs to see the complete charts, context, and respondent profiles.</p><a class="button button-light" href="#reports">Download the briefs <span aria-hidden="true">↓</span></a></section>
     </main>
-
-    <footer class="site-footer">
-      <p>Coastal Signal Lab <span>·</span> Sample research showcase</p>
-      <p>Built as a lightweight static site for GitHub Pages.</p>
-    </footer>
-
-    <dialog class="lightbox" data-lightbox aria-labelledby="lightbox-caption">
-      <button type="button" class="lightbox-close" aria-label="Close image viewer" data-lightbox-close>×</button>
-      <img src="" alt="" data-lightbox-image />
-      <p id="lightbox-caption" data-lightbox-caption></p>
-    </dialog>
+    <footer class="site-footer"><p>Barriers to Fresh Food Access <span>·</span> Syracuse, New York</p><p>Syracuse University · FAHNN · University of California, Irvine</p></footer>
+    <dialog class="lightbox" data-lightbox aria-labelledby="lightbox-caption"><button type="button" class="lightbox-close" aria-label="Close image viewer" data-lightbox-close>×</button><img src="" alt="" data-lightbox-image /><p id="lightbox-caption" data-lightbox-caption></p></dialog>
   </body>
 </html>
