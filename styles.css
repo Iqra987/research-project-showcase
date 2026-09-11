@@ -144,21 +144,6 @@ button { font: inherit; }
   text-transform: uppercase;
 }
 
-.pulse-dot {
-  display: inline-block;
-  width: 0.55rem;
-  height: 0.55rem;
-  margin-right: 0.45rem;
-  background: #12b886;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(18, 184, 134, 0.42);
-  animation: pulse 2.4s infinite;
-}
-
-@keyframes pulse {
-  50% { box-shadow: 0 0 0 0.45rem rgba(18, 184, 134, 0); }
-}
-
 .hero h1 {
   max-width: 14ch;
   margin: 0;
@@ -182,13 +167,6 @@ button { font: inherit; }
   color: #137c64;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 500;
-}
-
-.hero-summary {
-  max-width: 42rem;
-  margin: 2rem 0 0;
-  color: var(--ink-soft);
-  font-size: clamp(1.05rem, 1.4vw, 1.22rem);
 }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2.2rem; }
@@ -348,7 +326,6 @@ button { font: inherit; }
 .report-item h3 { margin: 1rem 0 0.6rem; font-size: clamp(1.2rem, 2vw, 1.55rem); line-height: 1.25; }
 .report-item p { max-width: 40rem; margin: 0; color: var(--muted); font-size: 0.9rem; }
 .report-item a { display: inline-block; margin-top: 1.25rem; font-size: 0.82rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 0.25rem; }
-.data-item::after { background: var(--lime); }
 
 .gallery { grid-template-columns: 4rem minmax(0, 0.55fr) minmax(0, 1.45fr); }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }

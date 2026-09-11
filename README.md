@@ -24,7 +24,6 @@ Team biographies and photographs are sourced from the official UCI, Syracuse Uni
 - Three downloadable community brief PDFs
 - Detailed findings for health and wellness, grocery shopping, and city bus use
 - Three accessible SVG data visualizations with a lightbox
-- Downloadable findings snapshot in CSV format
 - Two supplemental, print-friendly HTML overview pages
 - GitHub Pages-ready structure with no build step
 
