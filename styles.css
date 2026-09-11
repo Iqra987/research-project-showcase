@@ -313,9 +313,8 @@ button { font: inherit; }
 
 .acknowledgments { padding: clamp(4.5rem, 9vw, 8rem) var(--gutter); background: linear-gradient(135deg, #edf7e8, #dcefe2); color: var(--ink); border-top: 1px solid rgba(23, 59, 47, 0.1); }
 .acknowledgments-inner { display: grid; grid-template-columns: minmax(15rem, 0.8fr) minmax(22rem, 1.2fr); gap: clamp(2.5rem, 8vw, 8rem); max-width: var(--max); margin: 0 auto; }
-.acknowledgments .eyebrow { margin-bottom: 1.5rem; color: var(--ink); }
 .acknowledgments h2 { max-width: 10ch; margin: 0; color: #215a43; font-size: clamp(2.6rem, 5vw, 4.9rem); font-weight: 600; letter-spacing: -0.06em; line-height: 0.98; }
-.acknowledgments-inner > p { max-width: 42rem; margin: 3.7rem 0 0; color: var(--ink-soft); font-size: clamp(1.15rem, 2.1vw, 1.6rem); line-height: 1.6; }
+.acknowledgments-inner > p { max-width: 42rem; margin: 0.35rem 0 0; color: var(--ink-soft); font-size: clamp(1.15rem, 2.1vw, 1.6rem); line-height: 1.6; }
 .acknowledgments strong { color: var(--ink); }
 
 .site-footer { display: flex; justify-content: space-between; gap: 2rem; padding: 1.5rem var(--gutter); background: #0d2c23; color: rgba(255, 255, 255, 0.65); font-family: "DM Mono", monospace; font-size: 0.67rem; }
