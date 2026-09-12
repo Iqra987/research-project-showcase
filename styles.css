@@ -243,6 +243,7 @@ button { font: inherit; }
 .study-facts div { padding: 1rem; background: var(--white); border: 1px solid var(--line); border-radius: 0.85rem; }
 .study-facts dt { font-family: "DM Mono", monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .study-facts dd { margin: 0.45rem 0 0; font-weight: 700; }
+.study-facts .fact-note { display: block; margin-top: 0.35rem; color: var(--muted); font-size: 0.82rem; font-weight: 500; line-height: 1.4; }
 
 .team { scroll-margin-top: 4.75rem; }
 .team-grid { display: grid; grid-column: 3; gap: 2.75rem; }
