@@ -750,12 +750,26 @@ body {
 .acknowledgments {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #e8f7e5, #d8efe0 58%, #eaf4d0);
+  background:
+    linear-gradient(90deg, rgba(250, 248, 237, 0.98) 0%, rgba(250, 248, 237, 0.91) 44%, rgba(250, 248, 237, 0.58) 70%, rgba(250, 248, 237, 0.22) 100%),
+    url("assets/gratitude/community-produce-gratitude.jpg") center center / cover no-repeat,
+    #f4eedc;
   border-top: 0;
 }
-.acknowledgments::after { position: absolute; right: -7rem; bottom: -9rem; width: 24rem; height: 24rem; border: 4rem solid rgba(73, 201, 147, 0.12); border-radius: 50%; content: ""; }
-.acknowledgments-inner { position: relative; z-index: 1; }
+.acknowledgments::after { display: none; }
+.acknowledgments-inner {
+  position: relative;
+  z-index: 1;
+  padding: clamp(2rem, 4vw, 3.75rem);
+  background: rgba(255, 253, 246, 0.88);
+  border: 1px solid rgba(25, 77, 56, 0.15);
+  border-radius: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 1.5rem 4rem rgba(58, 50, 29, 0.14);
+  backdrop-filter: blur(9px);
+}
 .acknowledgments h2 { color: #15543d; }
+.acknowledgments .eyebrow { color: #b44832; }
+.acknowledgments strong { color: #174f3c; }
 
 .site-footer { padding-block: 1.8rem; background: #082a21; }
 
