@@ -416,17 +416,12 @@ body {
   min-height: min(48rem, calc(100svh - 4.9rem));
   padding-block: clamp(4.5rem, 9vw, 7.5rem);
   background:
-    radial-gradient(circle at 94% 18%, rgba(217, 238, 103, 0.18) 0 9rem, transparent 9.1rem),
-    radial-gradient(circle at 52% 110%, transparent 0 13rem, rgba(73, 201, 147, 0.13) 13.1rem 18rem, transparent 18.1rem),
-    linear-gradient(135deg, #0d3a2d 0%, #15543d 52%, #21704c 100%);
+    linear-gradient(90deg, rgba(4, 33, 24, 0.32) 0%, rgba(4, 33, 24, 0.16) 55%, rgba(4, 33, 24, 0.28) 100%),
+    url("assets/hero/transport-food-access-background.jpg") center center / cover no-repeat,
+    #0d3a2d;
 }
 .hero::before {
-  top: auto;
-  right: -6rem;
-  bottom: -8rem;
-  width: 24rem;
-  height: 24rem;
-  background: rgba(239, 118, 87, 0.1);
+  display: none;
 }
 .hero::after { display: none; }
 .hero-copy {
@@ -792,8 +787,8 @@ body {
   .site-nav a { font-size: 1.5rem; }
   .site-nav a:hover, .site-nav a:focus-visible { background: transparent; color: #166b4d; }
   .hero { padding-top: 3.2rem; }
-  .hero h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); }
-  .hero-subtitle { white-space: normal; }
+  .hero h1 { max-width: 100%; font-size: clamp(2.2rem, 9.2vw, 3rem); }
+  .hero-subtitle { max-width: 100%; font-size: clamp(1.35rem, 6.5vw, 1.8rem); white-space: normal; }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .section, .findings, .gallery { grid-template-columns: 1fr; gap: 1rem; }
   .section-index { display: none; }
