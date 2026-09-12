@@ -658,13 +658,11 @@ body {
 .findings {
   padding-block: clamp(5rem, 8vw, 7rem);
   background:
-    linear-gradient(rgba(5, 37, 26, 0.46), rgba(8, 43, 31, 0.6)),
-    radial-gradient(circle at 12% 32%, rgba(239, 118, 87, 0.14), transparent 20rem),
-    radial-gradient(circle at 88% 68%, rgba(217, 238, 103, 0.12), transparent 22rem),
-    url("assets/findings/fresh-food-background.jpg") center top / 100% auto no-repeat,
-    url("assets/findings/transit-map-background.jpg") center center / 100% auto no-repeat,
-    url("assets/findings/market-access-background.jpg") center bottom / 100% auto no-repeat,
-    linear-gradient(145deg, #0d352a, #174e3b 62%, #1c5b43);
+    linear-gradient(rgba(40, 128, 88, 0.36), rgba(29, 105, 73, 0.48)),
+    radial-gradient(circle at 12% 32%, rgba(239, 118, 87, 0.17), transparent 20rem),
+    radial-gradient(circle at 88% 68%, rgba(217, 238, 103, 0.16), transparent 22rem),
+    url("assets/findings/fresh-food-background.jpg") center top / 100% auto repeat-y,
+    linear-gradient(145deg, #164f3c, #237052 62%, #2d815b);
 }
 .findings-content { grid-column: 2; }
 .section-index.light { background: var(--cyan); }
