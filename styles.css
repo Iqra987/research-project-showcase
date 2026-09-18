@@ -417,7 +417,7 @@ body {
   padding-block: clamp(4.5rem, 9vw, 7.5rem);
   background:
     linear-gradient(90deg, rgba(4, 33, 24, 0.32) 0%, rgba(4, 33, 24, 0.16) 55%, rgba(4, 33, 24, 0.28) 100%),
-    url("assets/hero/transport-food-access-realistic.jpg?v=20260917-06") center center / cover no-repeat,
+    url("assets/hero/transport-food-access-realistic.jpg?v=20260917-07") center center / cover no-repeat,
     #0d3a2d;
 }
 .hero::before {
