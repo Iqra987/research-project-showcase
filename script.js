@@ -4,6 +4,7 @@ const navigation = document.querySelector("[data-nav]");
 const lightbox = document.querySelector("[data-lightbox]");
 const lightboxImage = document.querySelector("[data-lightbox-image]");
 const lightboxCaption = document.querySelector("[data-lightbox-caption]");
+const galleryCarousel = document.querySelector("[data-gallery-carousel]");
 
 const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 10);
 updateHeader();
@@ -38,3 +39,36 @@ document.querySelector("[data-lightbox-close]")?.addEventListener("click", () =>
 lightbox?.addEventListener("click", (event) => {
   if (event.target === lightbox) lightbox.close();
 });
+
+if (galleryCarousel) {
+  const galleryItems = Array.from(galleryCarousel.querySelectorAll("[data-gallery-item]"));
+  const previousButton = galleryCarousel.querySelector("[data-gallery-prev]");
+  const nextButton = galleryCarousel.querySelector("[data-gallery-next]");
+  const status = galleryCarousel.querySelector("[data-gallery-status]");
+  const pageSize = 2;
+  const pageCount = Math.ceil(galleryItems.length / pageSize);
+  let currentPage = 0;
+
+  const showGalleryPage = (page) => {
+    currentPage = Math.min(Math.max(page, 0), pageCount - 1);
+    const start = currentPage * pageSize;
+    const end = Math.min(start + pageSize, galleryItems.length);
+
+    galleryItems.forEach((item, index) => {
+      item.hidden = index < start || index >= end;
+    });
+
+    if (previousButton) previousButton.disabled = currentPage === 0;
+    if (nextButton) nextButton.disabled = currentPage === pageCount - 1;
+    if (status) status.textContent = `${start + 1}–${end} of ${galleryItems.length}`;
+  };
+
+  previousButton?.addEventListener("click", () => showGalleryPage(currentPage - 1));
+  nextButton?.addEventListener("click", () => showGalleryPage(currentPage + 1));
+  galleryCarousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") showGalleryPage(currentPage - 1);
+    if (event.key === "ArrowRight") showGalleryPage(currentPage + 1);
+  });
+
+  showGalleryPage(0);
+}
